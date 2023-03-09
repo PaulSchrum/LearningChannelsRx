@@ -23,7 +23,8 @@ namespace CA1
                     @"Rx\ConsoleApp1\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.exe";
 
                 // Pass the client process a handle to the server.
-                pipeClient.StartInfo.UseShellExecute = false;
+                //pipeClient.StartInfo.UseShellExecute = false;
+                //pipeClient.StartInfo.CreateNoWindow = false;
                 pipeClient.Start();
 
                 Console.WriteLine("S: Client started; Awaiting connection.");
